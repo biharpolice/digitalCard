@@ -2,8 +2,6 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background-color: aqua;
-    font-family: 'Open Sans', sans-serif;
 }
 
 .container {
@@ -16,14 +14,6 @@ body {
     width: 100%;
     display: block;
     margin: auto auto;
-}
-
-.txt_link {
-    position: absolute;
-    margin: 26% auto auto -44%;
-    font-size: 3vw;
-    color: white;
-    text-decoration: none;
 }
 
 .fbBtn {
@@ -68,11 +58,6 @@ body {
 
     .digitalCardBG {
         width: 720px;
-    }
-
-    .txt_link {
-        margin: 180px auto auto -310px;
-        font-size: 28px;
     }
 
     .fbBtn {
