@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <a class="txt_link" href="https://police.bihar.gov.in">
+            police.bihar.gov.in
+        </a>
+
+        <a href="https://www.facebook.com/policebihar">
+            <img class="fbBtn mBtnShadow" src="./img/fbBtn.png" alt="fbBtn">
+        </a>
+
+        <a href="https://www.instagram.com/biharpoliceofficial">
+            <img class="instaBtn mBtnShadow" src="./img/instaBtn.png" alt="instaBtn">
+        </a>
+
+        <a href="https://twitter.com/bihar_police">
+            <img class="twitterBtn mBtnShadow" src="./img/twitterBtn.png" alt="twitterBtn">
+        </a>
+
+        <img onclick="shareURL()" class="shareBtn" src="./img/shareBtn.png" alt="shareBtn">
+
+        <img class="digitalCardBG" src="./img/digitalCardBG.jpg" alt="digitalCardBG">
+
+        <script>
+            let width = window.innerWidth;
+            let height = window.innerHeight;
+            function shareURL() {
+
+                // Get the current page URL
+                var currentURL = window.location.href;
+
+                // Create the WhatsApp share link
+                var whatsappURL = "whatsapp://send?text=" + currentURL;
+
+                // WhatsApp URL for  Web Version
+                if (height < width) {
+                    window.location.href = "https://api.whatsapp.com/send?text=" + currentURL;
+                }
+
+                else {
+                    // Open WhatsApp with the share message
+                    window.location.href = whatsappURL;
+                }
+            }
+        </script>
+    </div>
+</body>
+
+</html>
