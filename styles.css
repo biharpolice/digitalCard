@@ -16,7 +16,7 @@ body {
     margin: auto auto;
 }
 
-.fbBtn {
+.twitterBtn {
     position: absolute;
     margin: 80% auto auto -32%;
     width: 70%;
@@ -26,7 +26,7 @@ body {
     box-shadow: 0px 0px 14px 4px rgb(0 0 0 / 0.6);
 }
 
-.instaBtn {
+.fbBtn {
     position: absolute;
     margin: 98% auto auto -32%;
     width: 70%;
@@ -36,7 +36,7 @@ body {
     box-shadow: 0px 0px 14px 4px rgb(0 0 0 / 0.6);
 }
 
-.twitterBtn {
+.instaBtn {
     position: absolute;
     margin: 116% auto auto -32%;
     width: 70%;
@@ -60,7 +60,7 @@ body {
         width: 720px;
     }
 
-    .fbBtn {
+    .twitterBtn {
         margin: 578px auto auto -160px;
         width: 360px;
 
@@ -69,7 +69,7 @@ body {
         box-shadow: none;
     }
 
-    .instaBtn {
+    .fbBtn {
         margin: 670px auto auto -160px;
         width: 360px;
 
@@ -78,7 +78,7 @@ body {
         box-shadow: none;
     }
 
-    .twitterBtn {
+    .instaBtn {
         margin: 762px auto auto -160px;
         width: 360px;
 
