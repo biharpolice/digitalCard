@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Digital Card</title>
+    <title>Bihar Police</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -50,23 +50,25 @@
 
       <script>
         let width = window.innerWidth;
-        let height = window.innerHeight;
-        function shareURL() {
-          // Get the current page URL
-          var currentURL = window.location.href;
+            let height = window.innerHeight;
+            function shareURL() {
 
-          // Create the WhatsApp share link
-          var whatsappURL = "whatsapp://send?text=" + currentURL;
+                // Get the current page URL
+                var currentURL = window.location.href;
 
-          // WhatsApp URL for  Web Version
-          if (height < width) {
-            window.location.href =
-              "https://api.whatsapp.com/send?text=" + currentURL;
-          } else {
-            // Open WhatsApp with the share message
-            window.location.href = whatsappURL;
-          }
-        }
+                // Create the WhatsApp share link
+                var whatsappURL = "whatsapp://send?text=अधिक जानकारी के लिये हमसे आज ही जुड़ें \n" + currentURL;
+
+                // WhatsApp URL for  Web Version
+                if (height < width) {
+                    window.location.href = "https://api.whatsapp.com/send?text=अधिक जानकारी के लिये हमसे आज ही जुड़ें \n" + currentURL;
+                }
+
+                else {
+                    // Open WhatsApp with the share message
+                    window.location.href = whatsappURL;
+                }
+            }
       </script>
     </div>
   </body>
