@@ -1,55 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bihar Police</title>
-    <link rel="stylesheet" href="./styles.css">
-</head>
-
-<body>
+  <body>
     <div class="container">
-        
-        <a href="https://twitter.com/bihar_police">
-            <img class="twitterBtn mBtnShadow" src="./img/twitterBtn.png" alt="twitterBtn">
-        </a>
+      <a href="https://twitter.com/bihar_police">
+        <img class="twitterBtn" src="./img/X.png" alt="twitterBtn" />
+      </a>
 
-        <a href="https://www.facebook.com/policebihar">
-            <img class="fbBtn mBtnShadow" src="./img/fbBtn.png" alt="fbBtn">
-        </a>
+      <a href="https://www.youtube.com/@biharpoliceofficial">
+        <img class="youTubeBtn" src="./img/Youtube.png" alt="youTubeBtn" />
+      </a>
 
-        <a href="https://www.instagram.com/biharpoliceofficial">
-            <img class="instaBtn mBtnShadow" src="./img/instaBtn.png" alt="instaBtn">
-        </a>
-        
-        <img onclick="shareURL()" class="shareBtn" src="./img/shareBtn.png" alt="shareBtn">
+      <a href="https://www.facebook.com/policebihar">
+        <img class="fbBtn" src="./img/FB.png" alt="fbBtn" />
+      </a>
 
-        <img class="digitalCardBG" src="./img/digitalCardBG.jpg" alt="digitalCardBG">
+      <a href="https://www.instagram.com/biharpoliceofficial">
+        <img class="instaBtn" src="./img/Insta.png" alt="instaBtn" />
+      </a>
 
-        <script>
-            let width = window.innerWidth;
-            let height = window.innerHeight;
-            function shareURL() {
+      <a href="https://police.bihar.gov.in">
+        <img class="webBtn" src="./img/Web.png" alt="webBtn" />
+      </a>
 
-                // Get the current page URL
-                var currentURL = window.location.href;
+      <img
+        onclick="shareURL()"
+        class="shareBtn"
+        src="./img/Share.png"
+        alt="shareBtn"
+      />
 
-                // Create the WhatsApp share link
-                var whatsappURL = "whatsapp://send?text=अधिक जानकारी के लिये हमसे आज ही जुड़ें \n" + currentURL;
+      <img
+        class="digitalCardBG"
+        src="./img/digitalCardBG.jpg"
+        alt="digitalCardBG"
+      />
 
-                // WhatsApp URL for  Web Version
-                if (height < width) {
-                    window.location.href = "https://api.whatsapp.com/send?text=अधिक जानकारी के लिये हमसे आज ही जुड़ें \n" + currentURL;
-                }
+      <script>
+        let width = window.innerWidth;
+        let height = window.innerHeight;
+        function shareURL() {
+          // Get the current page URL
+          var currentURL = window.location.href;
 
-                else {
-                    // Open WhatsApp with the share message
-                    window.location.href = whatsappURL;
-                }
-            }
-        </script>
+          // Create the WhatsApp share link
+          var whatsappURL = "whatsapp://send?text=" + currentURL;
+
+          // WhatsApp URL for  Web Version
+          if (height < width) {
+            window.location.href =
+              "https://api.whatsapp.com/send?text=" + currentURL;
+          } else {
+            // Open WhatsApp with the share message
+            window.location.href = whatsappURL;
+          }
+        }
+      </script>
     </div>
-</body>
-
+  </body>
 </html>
